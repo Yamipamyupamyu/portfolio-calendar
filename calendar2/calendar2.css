@@ -1,0 +1,59 @@
+.area {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.year-month {
+  text-align: center;
+}
+
+#next-prev-button {
+  text-align: center;
+
+}
+
+#next {
+  width: 80px;
+  height: 30px;
+}
+
+#prev {
+  width: 80px;
+  height: 30px;
+}
+
+table {
+  border: solid 1px #000;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+  border: solid 1px #000;
+}
+
+
+td {
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.today {
+  background-color: rgb(255, 219, 219);
+}
+
+th:first-child {
+  color: red;
+}
+
+th:last-child {
+  color: blue;
+}
+
+td:first-child {
+  color: red;
+}
+
+td:last-child {
+  color: blue;
+}
