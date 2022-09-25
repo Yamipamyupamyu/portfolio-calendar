@@ -112,7 +112,7 @@ process();
 function prev() {
   referenceDate.setMonth(referenceDate.getMonth() - 1);
   process(referenceDate);
-  // setMonthでreferenceDateの値をセット
+  // setMonthでreferenceDateの新たな値をセット
   // processの引数に指定して先月のカレンダーを作成
 }
 
