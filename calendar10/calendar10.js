@@ -6,12 +6,10 @@ for (let i = 0; i < week.length; i++) {
 disp += '</tr><table>';
 document.getElementById('week').innerHTML = disp;
 
-
-
-
 // 今日
 let today = new Date();
 console.log('today:' + today);
+// if文で参照する値
 console.log('todayの年:' + today.getFullYear());
 console.log('todayの月:' + today.getMonth() + 1);
 console.log('todayの日付:' + today.getDate());
@@ -24,6 +22,8 @@ console.log('referenceDate:' + referenceDate);
 let referenceToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 console.log('referenceToday:' + referenceToday);
 
+
+// カレンダー作成関数
 function process() {
 
   // 年　数字
@@ -112,6 +112,8 @@ process();
 function prev() {
   referenceDate.setMonth(referenceDate.getMonth() - 1);
   process(referenceDate);
+  // setMonthでreferenceDateの値をセット
+  // processの引数に指定して先月のカレンダーを作成
 }
 
 // 次の月表示
